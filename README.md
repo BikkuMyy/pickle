@@ -1,4 +1,7 @@
-# pickle
+# Pickle
+Independent project work for [Full Stack web development course](https://github.com/fullstack-hy2020/misc/blob/master/harjoitustyo.md)
+
+*Work in progress*
 
 ## Project setup
 ```
