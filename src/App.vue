@@ -1,18 +1,23 @@
 <template>
   <div id="app">
-    <NavigationBar></NavigationBar>
+    <div>
+      <NavigationBar></NavigationBar>
+    </div>
+    <div>
+      <CardContainer></CardContainer>
+    </div>
   </div>
 </template>
 
 <script>
 import NavigationBar from './components/NavigationBar.vue'
-
-
+import CardContainer from './components/CardContainer.vue'
 
 export default {
   name: 'App',
   components: {
-    NavigationBar
+    NavigationBar,
+    CardContainer
   }
 }
 </script>
