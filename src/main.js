@@ -13,6 +13,9 @@ Vue.use(MdTabs)
 Vue.use(MdCard)
 Vue.config.productionTip = false
 
+const router = new VueRouter()
+
 new Vue({
+  router,
   render: h => h(App),
 }).$mount('#app')

@@ -12,10 +12,11 @@
       <div class="md-toolbar-row">
         <md-tabs md-sync-route class="md-transparent" md-alignment="centered">
           <md-tab id="home" md-label="Home" to="/home">
+          Helloo
           </md-tab>
-          <md-tab id="topics" md-label="Topics" to="/topics">Topics</md-tab>
-          <md-tab id="tasks" md-label="Tasks" to="/tasks">Tasks</md-tab>
-          <md-tab id="groups" md-label="Groups" to="/groups">Groups</md-tab>
+          <md-tab id="topics" md-label="Topics" to="/topics"><Topics/></md-tab>
+          <md-tab id="tasks" md-label="Tasks" to="/tasks"><Tasks/></md-tab>
+          <md-tab id="groups" md-label="Groups" to="/groups"><Groups/></md-tab>
         </md-tabs>
       </div>
     </md-toolbar>
@@ -23,8 +24,16 @@
 </template>
 
 <script>
+import Topics from './Topics'
+import Tasks from './Tasks'
+import Groups from './Groups'
 
 export default {
-  name: "NavigationBar"
+  name: "NavigationBar",
+  components: {
+    Topics,
+    Tasks,
+    Groups
+  }
 };
 </script>
