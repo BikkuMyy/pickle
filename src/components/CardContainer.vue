@@ -1,6 +1,9 @@
 <template>
   <div>
-    <div class="md-layout md-aligment-center">
+    <div class="md-layout">
+      <BaseCard></BaseCard>
+      <BaseCard></BaseCard>
+      <BaseCard></BaseCard>
       <BaseCard></BaseCard>
       <BaseCard></BaseCard>
       <BaseCard></BaseCard>
