@@ -3,13 +3,13 @@
     <md-tabs md-sync-route class="md-transparent">
       <md-tab id="home" md-label="Home" to="/home">Helloo</md-tab>
       <md-tab id="topics" md-label="Topics" to="/topics">
-        <Topics />
+        <TopicContainer />
       </md-tab>
       <md-tab id="tasks" md-label="Tasks" to="/tasks">
-        <Tasks />
+        <TaskContainer />
       </md-tab>
       <md-tab id="groups" md-label="Groups" to="/groups">
-        <Groups />
+        <GroupContainer />
       </md-tab>
       <md-tab id="upload" md-label="Upload" to="/upload">
         <PictureUpload />
@@ -19,17 +19,17 @@
 </template>
 
 <script>
-import Topics from "./Topics";
-import Tasks from "./Tasks";
-import Groups from "./Groups";
+import TopicContainer from "./TopicContainer";
+import TaskContainer from "./TaskContainer";
+import GroupContainer from "./GroupContainer";
 import PictureUpload from "./PictureUpload";
 
 export default {
   name: "TabsContainer",
   components: {
-    Topics,
-    Tasks,
-    Groups,
+    TopicContainer,
+    TaskContainer,
+    GroupContainer,
     PictureUpload
   }
 };

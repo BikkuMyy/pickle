@@ -1,18 +1,17 @@
 <template>
   <div>
-    <md-card>
+    <md-card md-with-hover>
       <md-card-media-cover md-text-scrim>
         <md-card-media>
-        <img src="@/assets/arctic.jpg" alt="Arctic" />
-      </md-card-media>
+          <img :src="require(`@/assets/${img}`)" alt="Arctic" />
+        </md-card-media>
 
-      <md-card-area>
-        <md-card-header>
-          <span class="md-title">At the Arctic Sea</span>
-          <span class="md-subhead">In March</span>
-        </md-card-header>
-      </md-card-area>
-
+        <md-card-area>
+          <md-card-header>
+            <span class="md-title">{{ title }}</span>
+            <span class="md-subhead">{{ subhead }}</span>
+          </md-card-header>
+        </md-card-area>
       </md-card-media-cover>
     </md-card>
   </div>
@@ -20,7 +19,8 @@
 
 <script>
 export default {
-  name: "BaseCard"
+  name: "BaseCard",
+  props: ["type", "img", "title", "subhead"]
 };
 </script>
 
